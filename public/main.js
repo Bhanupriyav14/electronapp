@@ -17,7 +17,7 @@ function createWindow () {
   // and load the index.html of the app.
   mainWindow.loadFile('public/index.html')
   //mainWindow.loadURL(isDev ? "http://localhost:3000" : `file://${path.json(__dirname, '../build/index.html')}`);
-  mainWindow.on("closed", () => (win = null));
+  mainWindow.on("closed", () => (mainWindow = null));
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
